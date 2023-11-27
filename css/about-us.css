@@ -1,0 +1,128 @@
+.aboutBnrTxt h2 {
+    font-weight: 600;
+}
+
+.animatedBorder {
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.animatedBorder::before {
+    box-sizing: border-box;
+    transform: translateX(100%);
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-color: transparent;
+    z-index: 9;
+}
+
+.animatedBorder::after {
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-color: transparent;
+    z-index: 9;
+}
+
+.coreValBox {
+    width: 90%;
+}
+
+.coreValBox:hover .animatedBorder::before {
+    transition: 0.1s transform linear, 0.1s height linear 0.2s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: var(--white);
+}
+
+.coreValBox:hover .animatedBorder::after {
+    transition: 0.1s transform linear 0.1s, 0.1s height linear 0.3s;
+    transform: translateX(0);
+    height: 100%;
+    border-color: var(--white);
+}
+
+.coreValBox img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    padding: 25%;
+    border: solid 3px var(--teal);
+    transition: 0.2s padding linear;
+}
+
+.coreValBox:hover img {
+    padding: 20%;
+}
+
+.coreValBox h5 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.awardsDetails p {
+    font-weight: 500;
+}
+
+.awardHeader {
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+}
+
+.awardSubtitle {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.awardTitle {
+    font-weight: 600 !important;
+}
+
+.awardImgs .swiper-wrapper {
+    overflow: hidden;
+}
+.awardImgs{
+    text-align: center;
+}
+.awardImg img{
+    height: auto !important;
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+
+    .awardImgs img {
+        width: auto;
+        max-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coreValBox {
+        width: 100%;
+    }
+
+    .coreValBox img {
+        width: 120px;
+        height: 120px;
+        padding: 20%;
+    }
+}

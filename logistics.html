@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#231F20" />
+    <title>Logistics | Plutus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-auto col-sm-5 col-6">
+            <a href="index.html" class="logo"
+              ><img src="images/logo.svg" class="img-fluid" alt=""
+            /></a>
+          </div>
+          <div class="col-auto navigHolder">
+            <ul class="menuList">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="trading.html">Trading</a></li>
+              <li><a href="logistics.html">Logistics</a></li>
+              <li>
+                <a href="supply-chain-finance.html">Supply Chain Finance</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-auto px-xl-0 px-xxl-3 d-lg-none">
+            <button class="menuBtn navigBtns">
+              <span></span><span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-5">
+      <section class="mb-4 mb-lg-5">
+        <div class="container bannerWrp">
+          <div class="row align-items-center gx-lg-5">
+            <div class="col-md-5 animateThis slideRight vectorBanner">
+              <img
+                src="images/banner/logistics.png"
+                class="img-fluid d-table mx-auto flotingBanner"
+                alt=""
+              />
+            </div>
+            <div class="col-md-7 animateThis slideLeft">
+              <div class="row mt-5 mb-4 my-md-0">
+                <div class="col-lg-12 col-xxl-10 mt-5 mb-4 my-md-0">
+                  <h1 class="title mb-0">
+                    The Smart Logistics partner at your <span>Doorstep.</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection pt-4">
+        <div class="container animateThis slideTop animateDelay5">
+          <div class="row">
+            <div class="col-lg-5">
+              <span class="titleTopDivider"></span>
+              <h2 class="title mb-4">
+                100+ Transportation Partners, Worldwide. For <span> You. </span>
+              </h2>
+              <p class="titlePara">
+                We are your partners in success and peace of mind. Our mission
+                is to provide exceptional logistics and delivery solutions by
+                leveraging our market knowledge and experience to deliver
+                customized and reliable solutions that meet your unique needs.
+              </p>
+              <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                            class="mt-4 fillBtn pinkBgBtn">GET YOUR SOLUTION TODAY</button> -->
+            </div>
+            <div class="col-lg-7">
+              <div class="customForm serviceEnquiryForm mt-4 mt-lg-0">
+                <form action="" class="row gx-3">
+                  <div class="col-12 form-field">
+                    <label for="firstName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="phone">Contact No.</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Contact No."
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-lg-4 form-field">
+                    <label for="modeOfTrans">Mode Of Transport</label>
+                    <select class="form-select" name="modeOfTrans">
+                      <option value="air">Air</option>
+                      <option value="ocean">Ocean</option>
+                      <option value="cargo">Cargo</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-4 form-field">
+                    <label for="originTrans">Origin</label>
+                    <select class="form-select" name="originTrans">
+                      <option value="air">1</option>
+                      <option value="ocean">2</option>
+                      <option value="cargo">3</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-4 form-field">
+                    <label for="destTrans">Destination</label>
+                    <select class="form-select" name="destTrans">
+                      <option value="air">1</option>
+                      <option value="ocean">2</option>
+                      <option value="cargo">3</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-xl-4 form-field">
+                    <label for="equipType">Equipment Type</label>
+                    <select class="form-select" name="equipType">
+                      <option value="air">20' Dry Standard</option>
+                      <option value="oceon">40' Dry Standard</option>
+                      <option value="cargo">40' Dry High Cube</option>
+                      <option value="">45' Dry High Cube</option>
+                      <option value="">20' Reefer</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-xl-3 form-field">
+                    <label for="containerNum">No. of Containers</label>
+                    <div class="num-control">
+                      <div
+                        class="control-btn"
+                        id="decrease"
+                        onclick="decreaseValue()"
+                        value="Decrease Value"
+                      >
+                        -
+                      </div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="containerNum"
+                        value="1"
+                        min="1"
+                      />
+                      <div
+                        class="control-btn"
+                        id="increase"
+                        onclick="increaseValue()"
+                        value="Increase Value"
+                      >
+                        +
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-xl-3 form-field">
+                    <label for="containerWgt">Max Net Weight</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="containerWgt"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-6 col-xl-2 form-field">
+                    <label for="uom">UOM</label>
+                    <select class="form-select" name="uom">
+                      <option value="mt">MT</option>
+                      <option value="kg">KG</option>
+                      <option value="bags">No. of Bags</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-3 form-field">
+                    <label for="etd">ETD</label>
+                    <input
+                      type="date"
+                      class="form-control datePicker"
+                      name="etd"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-lg-9 form-field">
+                    <div class="row align-items-end">
+                      <div class="col-md-9">
+                        <label for="commodity">Commodity</label>
+                        <input
+                          type="test"
+                          class="form-control"
+                          name="commodity"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="col-md-3 form-check mt-3 mt-md-0 mb-md-2">
+                        <input
+                          class="form-check-input hazardous-check"
+                          type="checkbox"
+                          name="hazardous"
+                          id="harzardous"
+                          value="harzardous"
+                        />
+                        <label class="form-check-label mb-0" for="hazardous"
+                          >Hazardous</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="remarks">Remarks (if any)</label>
+                    <textarea
+                      class="form-control textarea"
+                      placeholder="Message"
+                      name="remarks"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 form-field">
+                    <button type="submit" class="fillBtn blackBgBtn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="pageSection pt-md-5">
+            <div class="container animateThis slideTop animateDelay5">
+                <span class="titleTopDivider"></span>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h2 class="title mb-4">100+ Transportation Partners, Worldwide. For <span> You. </span> </h2>
+                    </div>
+                    <div class="col-lg-7">
+                        <p class="titlePara">We are your partners in success and peace of mind. Our mission is to
+                            provide exceptional
+                            logistics and delivery solutions by leveraging our market knowledge and experience to
+                            deliver customized and reliable solutions that meet your unique needs.</p>
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                            class="mt-4 fillBtn pinkBgBtn">GET YOUR SOLUTION TODAY</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+      <section class="pageSection pb-0">
+        <div class="py-5 blackGradientBg">
+          <div class="container">
+            <h2 class="title tealClrTitle mb-5"><span>Ocean</span> Freight</h2>
+            <div class="row justify-content-between py-lg-5">
+              <div class="col-md-6 whyWorkIntro">
+                <div class="animateThis slideRight accordionSideImg">
+                  <img
+                    src="images/logistics/ocean-freight.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/ocean-freight-LCL.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/ocean-freight-FCL.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="accordion" id="oceanFreightAccordion">
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button"
+                      id="headingOne"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                    >
+                      01. About Ocean Freight
+                    </button>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#oceanFreightAccordion"
+                    >
+                      <div class="accordion-body">
+                        Ocean Freights are used for the transportation of large
+                        loads of goods by sea. One of the world’s biggest modes
+                        of transportation for carrying heavy goods, choosing the
+                        right ocean freight service provider can work wonders.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        02. Our Less than Load Container Services (LCL)
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#oceanFreightAccordion"
+                    >
+                      <div class="accordion-body">
+                        For cargoes of 13 cubic metres or less are ideal for
+                        shipment through LCL. LCL is the cheapest mode of
+                        transportation for importing smaller volume cargo. For
+                        importers, LCL can prove to be useful as they can
+                        purchase smaller quantities of materials needed for
+                        their inventory.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        03. Our Full Container Services (FCL)
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingThree"
+                      data-bs-parent="#oceanFreightAccordion"
+                    >
+                      <div class="accordion-body">
+                        If you have shipments weighing more than 15 cubic
+                        meters, our FCL services provide an economical solution.
+                        With faster transit times and less handling time
+                        required at the origin and destination, FCL is a
+                        reliable and efficient option. Once the container is
+                        unloaded from the vessel, your FCL shipment is picked up
+                        from the terminal and delivered directly to the
+                        designated facility.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection pb-0">
+        <div class="py-5 redGradientBg">
+          <div class="container">
+            <h2 class="title redClrTitle mb-5"><span>Air</span> Freight</h2>
+            <div class="row justify-content-between py-lg-5">
+              <div class="col-md-6 whyWorkIntro">
+                <div class="animateThis slideRight accordionSideImg">
+                  <img
+                    src="images/logistics/air-frieght.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/air-frieght-2.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/air-frieght-3.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 air-accordian">
+                <div class="accordion" id="airFrieghtAccordian">
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button"
+                      id="airFrieght01"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#airFrieghtOne"
+                    >
+                      01. Speed and Urgency
+                    </button>
+                    <div
+                      id="airFrieghtOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#airFrieghtAccordian"
+                    >
+                      <div class="accordion-body">
+                        Air freight is the fastest mode of transportation for
+                        moving goods, making it an ideal choice for urgent
+                        shipments. With air freight services, you can
+                        significantly reduce transit times compared to other
+                        modes of transport such as sea or land. This speed is
+                        especially beneficial when transporting high-value small
+                        goods or time-sensitive items that require quick
+                        delivery.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      id="airFrieght02"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#airFrieghtTwo"
+                    >
+                      02. Real-time Visibility and Monitoring
+                    </button>
+                    <div
+                      id="airFrieghtTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#airFrieghtAccordian"
+                    >
+                      <div class="accordion-body">
+                        Air freight services, like the ones offered by Plutus,
+                        provide real-time visibility of your shipments from
+                        pick-up to delivery. Dedicated teams actively monitor
+                        the progress of your goods and ensure they reach their
+                        destination on time. This level of visibility allows you
+                        to stay updated on the status of your shipment,
+                        providing peace of mind and the ability to plan
+                        accordingly.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      id="airFrieght03"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#airFrieghtThree"
+                    >
+                      03. Reliable and Efficient for Heavy Goods
+                    </button>
+                    <div
+                      id="airFrieghtThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#airFrieghtAccordian"
+                    >
+                      <div class="accordion-body">
+                        Air freight is not only fast but also dependable for
+                        carrying heavy goods. With dependable arrival and
+                        departure times, air freight ensures the timely
+                        transportation of heavy cargo.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection pb-0">
+        <div class="py-5 greenGradientBg">
+          <div class="container">
+            <h2 class="title tealClrTitle mb-5">
+              <span>Inland</span> Transportation
+            </h2>
+            <div class="row justify-content-between py-lg-5">
+              <div class="col-md-6 whyWorkIntro">
+                <div class="animateThis slideRight accordionSideImg">
+                  <img
+                    src="images/logistics/inland-transporation.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/inland-transporation-2.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    src="images/logistics/inland-transporation-3.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 air-accordian">
+                <div class="accordion" id="inlandAccordian">
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button"
+                      id="inland01"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inlandOne"
+                    >
+                      01. Efficient and Economical
+                    </button>
+                    <div
+                      id="inlandOne"
+                      class="accordion-collapse collapse show"
+                      data-bs-parent="#inlandAccordian"
+                    >
+                      <div class="accordion-body">
+                        Ground freight services, offered by Plutus, provide an
+                        efficient and cost-effective solution for shipping
+                        goods. This mode of transport is particularly
+                        advantageous for heavy, large, or hazardous materials
+                        that may not be suitable for air or sea transportation.
+                        Ground shipping allows for easy distribution of goods
+                        within a specific region or country, making it a
+                        practical choice for domestic or cross-border shipments.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      id="inland02"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inlandTwo"
+                    >
+                      02. Flexibility for Local and Regional Transport
+                    </button>
+                    <div
+                      id="inlandTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#inlandAccordian"
+                    >
+                      <div class="accordion-body">
+                        Whether it’s cross-country or within your state, ground
+                        transportation networks are well-established and can
+                        efficiently navigate roads, highways, and infrastructure
+                        within the specified region. This level of accessibility
+                        and flexibility allows for timely delivery of goods,
+                        ensuring customer satisfaction and meeting supply chain
+                        demands.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <button
+                      class="accordion-button collapsed"
+                      id="inland03"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#inlandThree"
+                    >
+                      03. Preferred by International Flight Shippers
+                    </button>
+                    <div
+                      id="inlandThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#inlandAccordian"
+                    >
+                      <div class="accordion-body">
+                        Ground shipping is commonly utilized by international
+                        flight shippers as a complementary mode of transport for
+                        the movement of goods. While air freight offers speed
+                        and efficiency for long distances, ground transportation
+                        provides the necessary connectivity between airports,
+                        cargo terminals, and final delivery points.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection pb-0">
+        <div class="py-5 blackGradientBg">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-5 whyWorkIntro" data-sticky_parent>
+                <div class="sticky" data-sticky_column>
+                  <div class="animateThis slideRight vectorBanner">
+                    <h2 class="title tealClrTitle mb-4">
+                      <span>Value</span> Added Services
+                    </h2>
+                    <p class="titlePara">
+                      The most important thing at Plutus is our people. People
+                      who share the same values and are working together to
+                      build something special.
+                    </p>
+                    <a href="#" class="mt-4 borderBtn"
+                      >GET YOUR SOLUTION TODAY</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="row gx-lg-5 mt-4 mt-lg-0">
+                  <div class="col-6 my-4 animateThis slideTop">
+                    <div class="whyWorkBox">
+                      <div class="gradientIcon">
+                        <img src="images/logistics/value01.svg" alt="" />
+                      </div>
+                      <h5>Custom Clearance</h5>
+                      <p>
+                        Our team handles all documentation, represents you
+                        during customs examinations, assessments, and
+                        facilitates duty payments. Trust us to navigate complex
+                        procedures, saving you time and effort.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6 my-4 animateThis slideTop">
+                    <div class="whyWorkBox">
+                      <div class="gradientIcon">
+                        <img src="images/logistics/value02.svg" alt="" />
+                      </div>
+                      <h5>Customized Finance Solution</h5>
+                      <p>
+                        Optimize Cash Flow for Growth. Plutus offers flexible
+                        payment terms and favorable pricing with Freight
+                        Finance. Unlock working capital from your supply chain
+                        with Trade Finance, accelerating business growth.
+                        Experience tailored finance solutions for sustained
+                        success.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6 my-4 animateThis slideTop">
+                    <div class="whyWorkBox">
+                      <div class="gradientIcon">
+                        <img src="images/logistics/value03.svg" alt="" />
+                      </div>
+                      <h5>Trade Documentation</h5>
+                      <p>
+                        Our comprehensive solution simplifies international
+                        trade. Automate document management, ensure regulatory
+                        compliance, and enhance efficiency for smooth global
+                        transactions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-6 my-4 animateThis slideTop">
+                    <div class="whyWorkBox">
+                      <div class="gradientIcon">
+                        <img src="images/logistics/value04.svg" alt="" />
+                      </div>
+                      <h5>Warehousing Solutions</h5>
+                      <p>
+                        Optimize inventory management with our comprehensive
+                        offerings. Benefit from advanced technology, tailored
+                        storage solutions, and streamlined operations for
+                        enhanced efficiency and cost savings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection">
+        <div class="container">
+          <h2 class="title tealClrTitle mb-4"><span>Plutus</span> Advantage</h2>
+          <p class="titlePara">
+            Are you tired of the tedious and time-consuming process of obtaining
+            shipping quotes? Do you seek a partner that can help you optimize
+            logistics costs and boost your business profitability? Look no
+            further! With Plutus, we bring you a game-changing advantage that
+            revolutionizes the way you manage your logistics.
+          </p>
+          <div class="swiper supplySwiper mt-5 animateThis slideTop logistics">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="supplyBox paBox">
+                  <img src="images/logistics/plutus01.svg" alt="" />
+                  <div class="d-flex flex-column">
+                    <div class="col">
+                      <h5>Instant Quotes</h5>
+                      <p>
+                        Say goodbye to time-consuming quotation processes. With
+                        Plutus, you can instantly access price quotations from
+                        our partner shipping lines and NVOCCs, empowering you to
+                        make informed decisions and optimize your logistics
+                        planning.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="supplyBox paBox">
+                  <img src="images/logistics/plutus02.svg" alt="" />
+                  <div class="d-flex flex-column">
+                    <div class="col">
+                      <h5>Cost Control</h5>
+                      <p>
+                        By leveraging our expertise and advanced technology, we
+                        can help you reduce your logistics expenses by up to 25%
+                        - 30% annually. Maximize your efficiency and
+                        profitability with our cost control solutions tailored
+                        for the Indian market.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="supplyBox paBox">
+                  <img src="images/logistics/plutus03.svg" alt="" />
+                  <div class="d-flex flex-column">
+                    <div class="col">
+                      <h5>Monitored Dashboard</h5>
+                      <p>
+                        Stay informed and empowered with our interactive Plutus
+                        BI dashboard. Monitor performance, identify
+                        opportunities, and gain complete visibility into your
+                        logistics operations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="supplyBox paBox">
+                  <img src="images/logistics/plutus04.svg" alt="" />
+                  <div class="d-flex flex-column">
+                    <div class="col">
+                      <h5>Work Flow Management</h5>
+                      <p>
+                        Efficiency is key in logistics. Our intelligent
+                        task-based workflow management system automates
+                        deadlines and assigns responsibilities, ensuring smooth
+                        and streamlined operations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-lg-5">
+              <h2 class="title tealClrTitle mb-4">
+                <span>Our </span> Global Outreach
+              </h2>
+            </div>
+            <div class="col-lg-7">
+              <p class="titlePara">
+                Wherever your trade operations take you, our reliable services
+                ensure on-time shipments and hassle-free logistics operations.
+                We offer our trade advisory services across:
+              </p>
+            </div>
+          </div>
+          <img src="images/logistics/map.jpg" class="img-fluid w-100" alt="" />
+        </div>
+      </section>
+
+      <section class="pageSection mb-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5">
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Call.
+              </h2>
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Contact.
+              </h2>
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Solution.
+              </h2>
+              <p class="mt-4 animateThis slideRight titlePara">
+                We stand out from the competition by offering a range of unique
+                advantages that set us apart.
+              </p>
+              <div class="my-5">
+                <div
+                  class="d-flex flex-nowrap align-items-center mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_1.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    <a href="tel:+912247492230">+91 22 4749 2230</a>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-nowrap align-items-center mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_2.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    <a href="mailto:inquiry@plutusworld.com"
+                      >inquiry@plutusworld.com</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-nowrap mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_3.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    1013, 10th Floor, Ghanshyam Enclave, New Link Road, Lalji
+                    Pada, Kandivali (W), Mumbai, Maharashtra - 400067
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 contactFormWrp">
+              <div class="contactForm animateThis fadeGrow">
+                <form action="" class="row">
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Name*"
+                      />
+                      <label for="floatingInput">Name*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email ID*"
+                      />
+                      <label for="floatingInput">Email ID*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Mobile No.*"
+                      />
+                      <label for="floatingInput">Mobile No.*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="pt-0">Purpose*</label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="freightInquiry"
+                        value="freightInquiry"
+                      />
+                      <label class="form-check-label" for="freightInquiry"
+                        >Freight Inquiry</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="tradingEnquiry"
+                        value="tradingEnquiry"
+                      />
+                      <label class="form-check-label" for="tradingEnquiry"
+                        >Trading Inquiry</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="supplyChainFinance"
+                        value="supplyChainFinance"
+                      />
+                      <label class="form-check-label" for="supplyChainFinance"
+                        >Supply Chain Finance</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="generalInquiry"
+                        value="generalInquiry"
+                      />
+                      <label class="form-check-label" for="generalInquiry"
+                        >General inquiry</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Message*"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="fillBtn whiteBgBtn">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Form Modal -->
+      <div
+        class="modal fade formModal"
+        id="formModal"
+        tabindex="-1"
+        aria-labelledby="formModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="mb-0">Fill in details</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body formModalBody">
+              <div class="customForm modalForm">
+                <form action="" class="row gx-3">
+                  <div class="col-12 form-field">
+                    <label for="firstName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="phone">Contact No.</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Contact No."
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-lg-4 form-field">
+                    <label for="modeOfTrans">Mode Of Transport</label>
+                    <select class="form-select" name="modeOfTrans">
+                      <option value="air">Air</option>
+                      <option value="oceon">Oceon</option>
+                      <option value="cargo">Cargo</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-4 form-field">
+                    <label for="originTrans">Origin</label>
+                    <select class="form-select" name="originTrans">
+                      <option value="air">1</option>
+                      <option value="oceon">2</option>
+                      <option value="cargo">3</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-4 form-field">
+                    <label for="destTrans">Destination</label>
+                    <select class="form-select" name="destTrans">
+                      <option value="air">1</option>
+                      <option value="oceon">2</option>
+                      <option value="cargo">3</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-4 form-field">
+                    <label for="equipType">Equipment Type</label>
+                    <select class="form-select" name="equipType">
+                      <option value="air">20' Dry Standard</option>
+                      <option value="oceon">40' Dry Standard</option>
+                      <option value="cargo">40' Dry High Cube</option>
+                      <option value="">45' Dry High Cube</option>
+                      <option value="">20' Reefer</option>
+                    </select>
+                  </div>
+                  <div class="col-6 col-lg-3 form-field">
+                    <label for="containerNum">No. of Containers</label>
+                    <div class="num-control">
+                      <div
+                        class="control-btn"
+                        id="decrease"
+                        onclick="decreaseValue()"
+                        value="Decrease Value"
+                      >
+                        -
+                      </div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="containerNum"
+                        value="1"
+                        min="1"
+                      />
+                      <div
+                        class="control-btn"
+                        id="increase"
+                        onclick="increaseValue()"
+                        value="Increase Value"
+                      >
+                        +
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 form-field">
+                    <label for="containerWgt">Max Net Weight</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="containerWgt"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-6 col-lg-2 form-field">
+                    <label for="uom">UOM</label>
+                    <select class="form-select" name="uom">
+                      <option value="mt">MT</option>
+                      <option value="kg">KG</option>
+                      <option value="bags">No. of Bags</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-4 form-field">
+                    <label for="etd">ETD</label>
+                    <input
+                      type="date"
+                      class="form-control datePicker"
+                      name="etd"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-lg-8 form-field">
+                    <div class="row align-items-end">
+                      <div class="col-md-9">
+                        <label for="commodity">Commodity</label>
+                        <input
+                          type="test"
+                          class="form-control"
+                          name="commodity"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                      <div class="col-md-3 form-check mt-3 mt-md-0 mb-md-2">
+                        <input
+                          class="form-check-input hazardous-check"
+                          type="checkbox"
+                          name="hazardous"
+                          id="harzardous"
+                          value="harzardous"
+                        />
+                        <label class="form-check-label mb-0" for="hazardous"
+                          >Hazardous</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="remarks">Remarks (if any)</label>
+                    <textarea
+                      class="form-control textarea"
+                      placeholder="Message"
+                      name="remarks"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 form-field">
+                    <button type="submit" class="fillBtn blackBgBtn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-5 greenGradientBg">
+      <div class="container px-lg-5 animateThis slideTop">
+        <div class="row">
+          <div class="col-lg mb-lg-0 mb-5">
+            <a href="index.html" class="d-table mx-auto d-lg-block footLogo"
+              ><img src="images/whiteLogo.svg" alt=""
+            /></a>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_1"
+                role="button"
+                aria-expanded="false"
+              >
+                About Us
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_1"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Core Values</a></li>
+                <li><a href="#">Awards & Recognitions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_2"
+                role="button"
+                aria-expanded="false"
+              >
+                Trading
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_2"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Our Products</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_3"
+                role="button"
+                aria-expanded="false"
+              >
+                Logistics
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_3"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Ocean Frieght</a></li>
+                <li><a href="#">Air Freight</a></li>
+                <li><a href="#">Inland Transportation</a></li>
+                <li><a href="#">Value Added Services</a></li>
+                <li><a href="#">Personalized Advisory</a></li>
+                <li><a href="#">Global Outreach</a></li>
+                <li><a href="#">Plutus Advantage</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_4"
+                role="button"
+                aria-expanded="false"
+              >
+                Supply Chain Finance
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_4"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Financing Solutions</a></li>
+                <li><a href="#">Our Offerings</a></li>
+                <li><a href="#">Supply Chain Goals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyRight mt-5">
+          © 2023 <strong>Plutus</strong> | All Rights Reserved I
+          <a href="#"><u>Disclaimer</u></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/sticky.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+      // Form -  number input custom controls
+      function increaseValue() {
+        var value = parseInt(document.getElementById("containerNum").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById("containerNum").value = value;
+      }
+
+      function decreaseValue() {
+        var value = parseInt(document.getElementById("containerNum").value, 10);
+        value = isNaN(value) ? 0 : value;
+        value = 1 ? (value = 2) : "";
+        value--;
+        document.getElementById("containerNum").value = value;
+      }
+    </script>
+  </body>
+</html>

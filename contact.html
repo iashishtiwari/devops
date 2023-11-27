@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#231F20" />
+    <title>Contact | Plutus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-auto col-sm-5 col-6">
+                    <a href="index.html" class="logo"><img src="images/logo.svg" class="img-fluid" alt=""></a>
+                </div>
+                <div class="col-auto navigHolder">
+                    <ul class="menuList">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="trading.html">Trading</a></li>
+                        <li><a href="logistics.html">Logistics</a></li>
+                        <li><a href="supply-chain-finance.html">Supply Chain Finance</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto px-xl-0 px-xxl-3 d-lg-none">
+                    <button class="menuBtn navigBtns"><span></span><span></span><span></span><span></span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-5">
+        <section class="mb-5 pb-4">
+            <div class="container">
+                <div class="row contactBg br mx-0">
+                    <div class="col-lg-5 br contactDetails p-4">
+                        <span class="titleTopDivider"></span>
+                        <h2 class="title">Contact Us</h2>
+
+                        <div class="mt-5 py-md-5">
+                            <div class="contactInfo">
+                                <img src="images/contact/phone.svg">
+                                <div class="ps-3 ps-md-4"><a href="tel:+912247492230">+91 22 4749 2230</a></div>
+                            </div>
+                            <div class="contactInfo">
+                                <img src="images/contact/email.svg">
+                                <div class="ps-3 ps-md-4"><a
+                                        href="mailto:inquiry@plutusworld.com">inquiry@plutusworld.com</a></div>
+                            </div>
+                            <div class="contactInfo">
+                                <img src="images/contact/location.svg">
+                                <div class="ps-3 ps-md-4">1013, 10th Floor, Ghanshyam Enclave, New Link Road, Lalji
+                                    Pada,
+                                    Kandivali (W), Mumbai, Maharashtra - 400067</div>
+                            </div>
+                        </div>
+
+                        <div class="floatingCircles floatCirlceLight"></div>
+                        <div class="floatingCircles floatCirlceDark"></div>
+                    </div>
+                    <div class="col-lg-7 pe-md-0 py-lg-0 py-4">
+                        <div class="customForm p-0 p-md-4">
+                            <form action="" class="row gx-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="firsName" placeholder="First Name"
+                                            required>
+                                        <label for="firstName">First Name*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="lastName" placeholder="Last Name"
+                                            required>
+                                        <label for="lastName">Last Name*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" name="email" placeholder="Email"
+                                            required>
+                                        <label for="email">Email*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control" name="phone" placeholder="Mobile No."
+                                            required>
+                                        <label for="phone">Mobile No.*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="my-3">Purpose*</label>
+                                    <div class="linearCheckbox">
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" name="purposeRadios"
+                                                id="freightInquiry" value="freightInquiry">
+                                            <label class="form-check-label" for="freightInquiry">Freight Inquiry</label>
+                                        </div>
+                                        <div class="form-check  mb-3">
+                                            <input class="form-check-input" type="checkbox" name="purposeRadios"
+                                                id="tradingEnquiry" value="tradingEnquiry">
+                                            <label class="form-check-label" for="tradingEnquiry">Trading Inquiry</label>
+                                        </div>
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" name="purposeRadios"
+                                                id="supplyChainFinance" value="supplyChainFinance">
+                                            <label class="form-check-label" for="supplyChainFinance">Supply Chain
+                                                Finance</label>
+                                        </div>
+                                        <div class="form-check  mb-2">
+                                            <input class="form-check-input" type="checkbox" name="purposeRadios"
+                                                id="generalInquiry" value="generalInquiry">
+                                            <label class="form-check-label" for="generalInquiry">General inquiry</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mt-3">
+                                    <label class="form-floating mb-3" for="documents">Upload Documents</label>
+                                    <button class="fillBtn blackBgBtn uploadBtn">Upload Document
+                                        <input type="file" name="documents" id="uploadInput"
+                                            accept=".png, .jpeg, .jpg, .doc, .docx, .pdf" multiple>
+                                    </button>
+
+                                    <div id="uploadPreview" class="mt-2">
+                                        <p>No files currently selected for upload</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating mt-3">
+                                        <textarea class="form-control textarea" placeholder="Message*" name="message"
+                                            required></textarea>
+                                        <label for="message">Message*</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="fillBtn blackBgBtn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pt-5 greenGradientBg">
+        <div class="container px-lg-5 animateThis slideTop">
+            <div class="row">
+                <div class="col-lg mb-lg-0 mb-5">
+                    <a href="index.html" class="d-table mx-auto d-lg-block footLogo"><img src="images/whiteLogo.svg"
+                            alt=""></a>
+                </div>
+                <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+                    <div class="footLinkBox pb-2">
+                        <h4 class="footLinkHead collapsed" data-bs-toggle="collapse" href="#footLinks_1" role="button"
+                            aria-expanded="false">About Us</h4>
+                        <ul class="footLinks collapse d-lg-block" id="footLinks_1" data-bs-parent="#footLinks">
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Core Values</a></li>
+                            <li><a href="#">Awards & Recognitions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+                    <div class="footLinkBox pb-2">
+                        <h4 class="footLinkHead collapsed" data-bs-toggle="collapse" href="#footLinks_2" role="button"
+                            aria-expanded="false">Trading</h4>
+                        <ul class="footLinks collapse d-lg-block" id="footLinks_2" data-bs-parent="#footLinks">
+                            <li><a href="#">Our Products</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+                    <div class="footLinkBox pb-2">
+                        <h4 class="footLinkHead collapsed" data-bs-toggle="collapse" href="#footLinks_3" role="button"
+                            aria-expanded="false">Logistics</h4>
+                        <ul class="footLinks collapse d-lg-block" id="footLinks_3" data-bs-parent="#footLinks">
+                            <li><a href="#">Ocean Frieght</a></li>
+                            <li><a href="#">Air Freight</a></li>
+                            <li><a href="#">Inland Transportation</a></li>
+                            <li><a href="#">Value Added Services</a></li>
+                            <li><a href="#">Personalized Advisory</a></li>
+                            <li><a href="#">Global Outreach</a></li>
+                            <li><a href="#">Plutus Advantage</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+                    <div class="footLinkBox pb-2">
+                        <h4 class="footLinkHead collapsed" data-bs-toggle="collapse" href="#footLinks_4" role="button"
+                            aria-expanded="false">Supply Chain Finance</h4>
+                        <ul class="footLinks collapse d-lg-block" id="footLinks_4" data-bs-parent="#footLinks">
+                            <li><a href="#">Financing Solutions</a></li>
+                            <li><a href="#">Our Offerings</a></li>
+                            <li><a href="#">Supply Chain Goals</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyRight mt-5">
+                © 2023 <strong>Plutus</strong> | All Rights Reserved I <a href="#"><u>Disclaimer</u></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script>
+        const input = document.querySelector("#uploadInput");
+        const preview = document.querySelector("#uploadPreview");
+
+        function updateImageDisplay() {
+            while (preview.firstChild) {
+                preview.removeChild(preview.firstChild);
+            }
+
+            const curFiles = input.files;
+            if (curFiles.length === 0) {
+                const para = document.createElement("p");
+                para.textContent = "No files currently selected for upload";
+                preview.appendChild(para);
+            } else {
+                const list = document.createElement("ol");
+                preview.appendChild(list);
+
+                for (const file of curFiles) {
+                    const listItem = document.createElement("li");
+                    const para = document.createElement("p");
+                    if (validFileType(file)) {
+                        para.textContent = `File: ${file.name}, Size: ${returnFileSize(
+                            file.size,
+                        )}.`;
+                        // const image = document.createElement("img");
+                        // image.src = URL.createObjectURL(file);
+
+                        // listItem.appendChild(image);
+                        listItem.appendChild(para);
+                    } else {
+                        para.textContent = `File: ${file.name}: Not a valid file type. Update your selection.`;
+                        listItem.appendChild(para);
+                    }
+
+                    list.appendChild(listItem);
+                }
+            }
+        }
+        const fileTypes = [
+            "image/jpeg",
+            "image/png",
+            "application/msword",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "application/pdf"
+        ];
+
+        function validFileType(file) {
+            return fileTypes.includes(file.type);
+        }
+
+        function returnFileSize(number) {
+            if (number < 1024) {
+                return `${number} bytes`;
+            } else if (number >= 1024 && number < 1048576) {
+                return `${(number / 1024).toFixed(1)} KB`;
+            } else if (number >= 1048576) {
+                return `${(number / 1048576).toFixed(1)} MB`;
+            }
+        }
+
+        input.addEventListener("change", updateImageDisplay);
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+.formModal .modal-header{
+    border-bottom: 0px;
+    background-color: black;
+    color: #fff;
+}
+.formModal .modal-dialog{
+    max-width: 50%;
+    margin: 2% auto;
+}
+.modal-header .btn-close{
+    filter: invert(100%);
+}
+.modal-header .btn-close:hover{
+    opacity: 1;
+}
+.formModalBody{
+    background: white;
+    /* padding: 30px 25px; */
+}
+.modalForm{
+    background-color: white;
+    padding: 0px;
+}
+.modalForm .form-control, .modalForm .form-select{
+    border: 1px solid #ccc !important;
+    padding: 12px !important
+}
+
+.hazardous-check:checked{
+    background: var(--pink);
+}
+
+@media (max-width: 992px) {
+    .formModal .modal-dialog{
+        max-width: 75%;
+    }
+}
+@media (max-width: 768px) {
+    .formModal .modal-dialog{
+        max-width: 90%;
+    }
+}

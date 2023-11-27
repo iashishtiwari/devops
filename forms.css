@@ -1,0 +1,214 @@
+/* form */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+    box-shadow: none;
+    border-color: #ccc !important;
+}
+
+.form-control.textarea {
+    height: 80px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* font-size: 0.9rem; */
+    opacity: 0.5 !important;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    /* font-size: 0.9rem; */
+    opacity: 0.5 !important;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    /* font-size: 0.9rem; */
+    opacity: 0.5 !important;
+}
+
+/* select - custom arrow */
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+    display: none;
+}
+
+.form-select {
+    /* Arrow */
+    appearance: none;
+    background-image: url('../images/icons/down-arrow.png');
+    background-size: 7%;
+}
+
+.form-select:focus {
+    background-image: url('../images/icons/up-arrow.png');
+
+}
+
+.customForm {
+    background-color: var(--teal);
+    padding: 10px;
+}
+
+.form-floating .form-control {
+    /* background: transparent; */
+    border: none;
+    border-radius: 0px;
+    border-bottom: solid 1px #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #fff;
+}
+
+.form-floating label {
+    color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-floating .form-control:focus~label,
+.form-floating .form-control:not(:placeholder-shown)~label {
+    transform: scale(.85) translateY(-1rem) translateX(.15rem);
+}
+
+.form-floating {
+    margin-bottom: 30px;
+}
+
+.linearCheckbox .form-check {
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.form-check-input {
+    border-radius: 100%;
+}
+
+.form-check-input:checked {
+    background-color: #5EE5AE;
+    border-color: transparent;
+}
+
+.form-check-label {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.blackBgBtn {
+    border: 0;
+    color: var(--white);
+    background: var(--black);
+    padding: 0.8rem 1.3rem;
+}
+
+.blackBgBtn:hover {
+    border: 0;
+    color: var(--black)
+}
+
+.blackBgBtn::after {
+    content: none;
+}
+
+.uploadBtn {
+    padding: 0.8rem 1.3rem 0.8rem 2.5rem;
+}
+
+.uploadBtn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0.9rem;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/contact/upload.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+
+.uploadBtn:hover::after {
+    filter: invert(100%);
+    background-image: url("../images/contact/upload.png");
+    background-size: contain;
+}
+
+.uploadBtn::before {
+    background: var(--white);
+}
+
+.uploadBtn input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* logistics */
+.customForm .form-field {
+    margin-bottom: 25px;
+}
+
+.customForm .form-control,
+.customForm .form-select {
+    border-radius: 5px;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+    color: var(--black);
+}
+
+/* number controls */
+.num-control {
+    display: flex;
+}
+
+.num-control input {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #000 !important;
+    border-bottom: 1px solid #000 !important;
+    margin: 0px;
+    width: 40%;
+    z-index: 1;
+}
+
+.num-control .control-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    user-select: none;
+}
+
+.num-control .control-btn:hover {
+    cursor: pointer;
+}
+
+form #decrease {
+    width: 25%;
+    border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+    width: 30%;
+    border-radius: 0 8px 8px 0;
+}

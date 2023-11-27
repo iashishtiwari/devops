@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#231F20" />
+    <title>Trading | Plutus</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/trading.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-auto col-sm-5 col-6">
+            <a href="index.html" class="logo"
+              ><img src="images/logo.svg" class="img-fluid" alt=""
+            /></a>
+          </div>
+          <div class="col-auto navigHolder">
+            <ul class="menuList">
+              <li><a href="about-us.html">About Us</a></li>
+              <li><a href="trading.html">Trading</a></li>
+              <li><a href="logistics.html">Logistics</a></li>
+              <li>
+                <a href="supply-chain-finance.html">Supply Chain Finance</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-auto px-xl-0 px-xxl-3 d-lg-none">
+            <button class="menuBtn navigBtns">
+              <span></span><span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-5">
+      <section class="mb-4 mb-lg-5">
+        <div class="container bannerWrp">
+          <div class="row align-items-center gx-lg-5">
+            <div class="col-lg-5 animateThis slideRight vectorBanner">
+              <img
+                src="images/banner/trading.png"
+                class="img-fluid d-table mx-auto flotingBanner"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-7 animateThis slideLeft">
+              <div class="row mt-5 mb-4 my-md-0">
+                <div class="col-lg-12 col-xxl-10">
+                  <h1 class="mb-0">
+                    <span>Connecting</span> Business Digitally
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection pt-4">
+        <div class="container animateThis slideTop animateDelay5">
+          <div class="row">
+            <div class="col-lg-5">
+              <span class="titleTopDivider"></span>
+              <h2 class="title tealClrTitle mb-4">
+                <span>Physical</span> Commodity Trading
+              </h2>
+            </div>
+            <div class="col-lg-7">
+              <p class="titlePara mb-0">
+                Our extensive market knowledge and industry experience allow us
+                to specialize in buying and selling a wide range of physical
+                commodities, including polymers, crude oil, metals, and more. We
+                have a vast network of partners and suppliers worldwide,
+                enabling us to provide reliable and customized trading solutions
+                to our customers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection">
+        <div class="container">
+          <h3 class="title2 mb-4">Products we trade in:</h3>
+          <div class="customDropdown mb-5 filterDropdown">
+            <div class="select">
+              <span>Filter By</span>
+              <img
+                src="images/icons/down-arrow-white.svg"
+                class="chevronIcon"
+                alt=""
+              />
+            </div>
+            <input type="hidden" name="gender" />
+            <ul class="dropdownList">
+              <li id="mild-steel">Mild Steel</li>
+              <li id="stainless-steel">Stainless Steel</li>
+              <li id="polymers">Polymers</li>
+              <li id="textile">Textile</li>
+            </ul>
+          </div>
+
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Angles.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Angles</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Barbed-wire.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Barbed wire</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Beams.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Beams</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Billets.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Billets</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Binding-wire.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Binding wire</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Bloom.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Bloom</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Channels.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Channels</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Ignots.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Ignots</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Coated-coils.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Coated coils</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Columns.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Columns</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Flat.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Flat</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="productBox animateThis slideTop mb-4">
+                <div class="productImgWrp">
+                  <img src="images/trading/Hexagonal-bars.png" alt="" />
+                  <div class="enquireBtnWrp">
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#formModal"
+                      class="fillBtn enquireBtn"
+                    >
+                      Enquire Now
+                    </button>
+                  </div>
+                </div>
+                <div class="productInfo">
+                  <p class="productCat">Mild Steel</p>
+                  <p class="productName">Hexagonal bars</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pageSection mb-5">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5">
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Call.
+              </h2>
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Contact.
+              </h2>
+              <h2 class="title tealClrTitle animateThis slideRight">
+                <span>One</span> Solution.
+              </h2>
+              <p class="mt-4 animateThis slideRight titlePara">
+                We stand out from the competition by offering a range of unique
+                advantages that set us apart.
+              </p>
+              <div class="my-5">
+                <div
+                  class="d-flex flex-nowrap align-items-center mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_1.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    <a href="tel:+912247492230">+91 22 4749 2230</a>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-nowrap align-items-center mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_2.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    <a href="mailto:inquiry@plutusworld.com"
+                      >inquiry@plutusworld.com</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-nowrap mb-4 contInfo animateThis slideTop"
+                >
+                  <div class="col-auto">
+                    <div class="contIcon">
+                      <img src="images/cont_icon_3.svg" />
+                    </div>
+                  </div>
+                  <div class="col ps-3 ps-md-4">
+                    1013, 10th Floor, Ghanshyam Enclave, New Link Road, Lalji
+                    Pada, Kandivali (W), Mumbai, Maharashtra - 400067
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 contactFormWrp">
+              <div class="contactForm animateThis fadeGrow">
+                <form action="" class="row">
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Name*"
+                      />
+                      <label for="floatingInput">Name*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Email ID*"
+                      />
+                      <label for="floatingInput">Email ID*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="floatingInput"
+                        placeholder="Mobile No.*"
+                      />
+                      <label for="floatingInput">Mobile No.*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label class="pt-0">Purpose*</label>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="freightInquiry"
+                        value="freightInquiry"
+                      />
+                      <label class="form-check-label" for="freightInquiry"
+                        >Freight Inquiry</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="tradingEnquiry"
+                        value="tradingEnquiry"
+                      />
+                      <label class="form-check-label" for="tradingEnquiry"
+                        >Trading Inquiry</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="supplyChainFinance"
+                        value="supplyChainFinance"
+                      />
+                      <label class="form-check-label" for="supplyChainFinance"
+                        >Supply Chain Finance</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="purposeRadios"
+                        id="generalInquiry"
+                        value="generalInquiry"
+                      />
+                      <label class="form-check-label" for="generalInquiry"
+                        >General inquiry</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Message*"
+                        id="floatingTextarea"
+                      ></textarea>
+                      <label for="floatingTextarea">Message*</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="fillBtn whiteBgBtn">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Form Modal -->
+      <div
+        class="modal fade formModal"
+        id="formModal"
+        tabindex="-1"
+        aria-labelledby="formModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="mb-0">Fill in details</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body formModalBody">
+              <div class="customForm modalForm">
+                <form action="" class="row gx-3">
+                  <div class="col-12 form-field">
+                    <label>What you wish to do?</label>
+                    <div class="linearCheckbox customRadio">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="purposeRadios"
+                          value="buy"
+                        />
+                        <label class="form-check-label" for="buy">Buy</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="purposeRadios"
+                          value="sell"
+                        />
+                        <label class="form-check-label" for="sell">Sell</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="firstName">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="firstName"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="phone">Contact No.</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      placeholder="Contact No."
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="productCat">Product Category</label>
+                    <select class="form-select" name="productCat">
+                      <option value="mild-steel">Mild Steel</option>
+                      <option value="stainless-steel">Stainless Steel</option>
+                      <option value="polymers">Polymers</option>
+                      <option value="textile">Textile</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="itemSpec">Item Specification</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="itemSpec"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="itemQty">Quantity</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="itemQty"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6 form-field">
+                    <label for="delLocation">Delivery Location</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="delLocation"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <div class="col-12 form-field">
+                    <label>Logistics service require?</label>
+                    <div class="linearCheckbox customRadio">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="serviceRequired"
+                          value="yes"
+                        />
+                        <label class="form-check-label" for="yes">Yes</label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="serviceRequired"
+                          value="no"
+                        />
+                        <label class="form-check-label" for="no">No</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="remarks">Remarks (if any)</label>
+                    <textarea
+                      class="form-control textarea"
+                      placeholder="Message"
+                      name="remarks"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12 form-field">
+                    <button type="submit" class="fillBtn blackBgBtn">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-5 greenGradientBg">
+      <div class="container px-lg-5 animateThis slideTop">
+        <div class="row">
+          <div class="col-lg mb-lg-0 mb-5">
+            <a href="index.html" class="d-table mx-auto d-lg-block footLogo"
+              ><img src="images/whiteLogo.svg" alt=""
+            /></a>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_1"
+                role="button"
+                aria-expanded="false"
+              >
+                About Us
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_1"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Core Values</a></li>
+                <li><a href="#">Awards & Recognitions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_2"
+                role="button"
+                aria-expanded="false"
+              >
+                Trading
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_2"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Our Products</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_3"
+                role="button"
+                aria-expanded="false"
+              >
+                Logistics
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_3"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Ocean Frieght</a></li>
+                <li><a href="#">Air Freight</a></li>
+                <li><a href="#">Inland Transportation</a></li>
+                <li><a href="#">Value Added Services</a></li>
+                <li><a href="#">Personalized Advisory</a></li>
+                <li><a href="#">Global Outreach</a></li>
+                <li><a href="#">Plutus Advantage</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg mb-lg-0 mb-sm-4 mb-3">
+            <div class="footLinkBox pb-2">
+              <h4
+                class="footLinkHead collapsed"
+                data-bs-toggle="collapse"
+                href="#footLinks_4"
+                role="button"
+                aria-expanded="false"
+              >
+                Supply Chain Finance
+              </h4>
+              <ul
+                class="footLinks collapse d-lg-block"
+                id="footLinks_4"
+                data-bs-parent="#footLinks"
+              >
+                <li><a href="#">Financing Solutions</a></li>
+                <li><a href="#">Our Offerings</a></li>
+                <li><a href="#">Supply Chain Goals</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="copyRight mt-5">
+          © 2023 <strong>Plutus</strong> | All Rights Reserved I
+          <a href="#"><u>Disclaimer</u></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
